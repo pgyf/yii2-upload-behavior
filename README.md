@@ -2,7 +2,7 @@ Upload behavior for Yii 2    [中文](https://github.com/liyunfang/yii2-upload-b
 ===========================
 
 
-Note: Reference project https://github.com/liyunfang/yii2-upload-behavior
+Note: Reference project https://github.com/mongosoft/yii2-upload-behavior
 
 This behavior automatically uploads file and fills the specified attribute with a value of the name of the uploaded file.
 
