@@ -1,9 +1,11 @@
-Upload behavior for Yii 2
+Upload behavior for Yii 2    [English](https://github.com/liyunfang/yii2-upload-behavior/blob/master/README.md)  
 ===========================
 
 注意: 参考项目 https://github.com/liyunfang/yii2-upload-behavior
 
 这个扩展会自动上传文件并填充指定的属性值和上传文件的名称。
+
+![Effect picture 1](https://github.com/liyunfang/wr/blob/master/images/UploadBehavior1.png "Effect picture 1")  
 
 
 安装
