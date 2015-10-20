@@ -427,12 +427,16 @@ class UploadBehavior extends \yii\base\Behavior
             }
             return $fileName ? $fileName : null;
         }
-        if($multiple){
-            return $fileName ? [$fileName] : null;
+        if($fileName){
+            $fileName = $url . '/' . $fileName;
+            if($multiple){
+                return [$fileName];
+            }
+            else{
+                return $fileName;
+            }
         }
-        else{
-            return $fileName ? $url . '/' . $fileName : null;
-        }
+        return null;
     }
     
 
