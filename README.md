@@ -1,10 +1,13 @@
-Upload behavior for Yii 2
+Upload behavior for Yii 2    [中文](https://github.com/liyunfang/yii2-upload-behavior/blob/master/README-ZH-CN.md)  
 ===========================
+
 
 Note: Reference project https://github.com/liyunfang/yii2-upload-behavior
 
 This behavior automatically uploads file and fills the specified attribute with a value of the name of the uploaded file.
 
+
+![Effect picture 1](https://github.com/liyunfang/wr/blob/master/images/UploadBehavior1.png "Effect picture 1")  
 
 
 Installation
