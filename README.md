@@ -223,9 +223,9 @@ Example view  multiple file:
 ```php
 <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
       <?php
-            $imageUrls = $model->getUploadUrl(image);
-            $imageUrls = $model->getThumbUploadUrl('image');
-            $imageUrls = $model->getThumbUploadUrl('image', 'preview');
+            $imageUrls = $model->getUploadUrl('image');
+            //$imageUrls = $model->getThumbUploadUrl('image');
+            //$imageUrls = $model->getThumbUploadUrl('image', 'preview');
             foreach ($imageUrls as $imgUrl) {
                 ...
             }
@@ -244,7 +244,7 @@ if you install  https://github.com/kartik-v/yii2-widget-fileinput
                 'name' => Html::getInputName($model, 'image').'[]',
       ],
       'pluginOptions' => [
-          'initialPreview'=> !$model->image ? [] : $model->createPreview(['attribute' => 'image']),
+          'initialPreview'=> !$model->image ? [] : $model->createPreview(['attribute' => 'image', 'profile' => 'preview']),
           'overwriteInitial'=> !$model->image ? false: true,
 ```
 
