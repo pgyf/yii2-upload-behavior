@@ -70,7 +70,7 @@ class Document extends ActiveRecord
                         //'multipleSeparator' => '|', //文件名分隔符，会将文件保存到同一个字段中  未设置默认 |
                         //'nullValue' => '',
                         //'instanceByName' => false, //是否通过自定义name获取上传文件实例  未设置默认 false
-                        //'generateNewName' => true, //是否自动生成文件名                  未设置默认 true
+                        //'generateNewName' => true, //function($file){return uniqid().$file->name;}  //是否自动生成文件名 未设置默认 true
                         //'unlinkOnSave' => true,    //保存成功时是否删除原来的文件        未设置默认 true
                         //'deleteTempFile' => true,  //是否上传时删除临时文件              未设置默认 true
                         //'scenarios' => ['insert', 'update'], //在该情景下启用配置        
@@ -82,7 +82,7 @@ class Document extends ActiveRecord
                 //'multipleSeparator' => '|', //如果属性中没有该配置则默认读取此配置
                 //'nullValue' => '',          //如果属性中没有该配置则默认读取此配置
                 //'instanceByName' => false,  //如果属性中没有该配置则默认读取此配置
-                //'generateNewName' => true,  //如果属性中没有该配置则默认读取此配置
+                //'generateNewName' => true, //function($file){return uniqid().$file->name;} //如果属性中没有该配置则默认读取此配置
                 //'unlinkOnSave' => true,     //如果属性中没有该配置则默认读取此配置
                 //'deleteTempFile' => true,   //如果属性中没有该配置则默认读取此配置
                 'scenarios' => ['insert', 'update'], //如果属性中没有该配置则默认读取此配置
@@ -151,7 +151,7 @@ class User extends ActiveRecord
                         //'multipleSeparator' => '|',
                         //'nullValue' => '',
                         //'instanceByName' => false,
-                        //'generateNewName' => true,
+                        //'generateNewName' => true,//function($file){return uniqid().$file->name;}
                         //'unlinkOnSave' => true,
                         //'deleteTempFile' => true,
                         //'scenarios' => ['insert', 'update'],
@@ -174,7 +174,7 @@ class User extends ActiveRecord
                 //'multipleSeparator' => '|',
                 //'nullValue' => '',
                 //'instanceByName' => false,
-                //'generateNewName' => true,
+                //'generateNewName' => true,//function($file){return uniqid().$file->name;}
                 //'unlinkOnSave' => true,
                 //'deleteTempFile' => true,
                 //'createThumbsOnSave' => true,       //如果属性中没有该配置则默认读取此配置
