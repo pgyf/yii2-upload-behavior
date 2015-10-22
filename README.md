@@ -72,7 +72,7 @@ class Document extends ActiveRecord
                         //'multipleSeparator' => '|',
                         //'nullValue' => '',
                         //'instanceByName' => false,
-                        //'generateNewName' => true,
+                        //'generateNewName' => true,//function($file){return uniqid().$file->name.;}
                         //'unlinkOnSave' => true,
                         //'deleteTempFile' => true,
                         //'scenarios' => ['insert', 'update'],
@@ -84,7 +84,7 @@ class Document extends ActiveRecord
                 //'multipleSeparator' => '|',
                 //'nullValue' => '',
                 //'instanceByName' => false,
-                //'generateNewName' => true,
+                //'generateNewName' => true,//function($file){return uniqid().$file->name.;}
                 //'unlinkOnSave' => true,
                 //'deleteTempFile' => true,
                 'scenarios' => ['insert', 'update'],
@@ -153,7 +153,7 @@ class User extends ActiveRecord
                         //'multipleSeparator' => '|',
                         //'nullValue' => '',
                         //'instanceByName' => false,
-                        //'generateNewName' => true,
+                        //'generateNewName' => true,//function($file){return uniqid().$file->name.;}
                         //'unlinkOnSave' => true,
                         //'deleteTempFile' => true,
                         //'scenarios' => ['insert', 'update'],
@@ -175,7 +175,7 @@ class User extends ActiveRecord
                 //'multipleSeparator' => '|',
                 //'nullValue' => '',
                 //'instanceByName' => false,
-                //'generateNewName' => true,
+                //'generateNewName' => true,//function($file){return uniqid().$file->name.;}
                 //'unlinkOnSave' => true,
                 //'deleteTempFile' => true,
                 //'createThumbsOnSave' => true,
